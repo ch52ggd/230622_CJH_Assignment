@@ -1,0 +1,33 @@
+과제
+
+1. Character 클래스를 만드세요
+
+2. Character 클래스에는
+	- string name;
+	- string job;
+	- int hp;
+	- int atk;
+
+모든 접근 제한자는 private로 선언
+
+값을 가져올 땐
+string name
+{
+	get
+	{
+		return this.name;
+	}
+}
+
+모든 정보를 출력하는 함수 GetInfo() 만들기
+
+ㄴ 여기까지 클래스
+
+
+Main 함수에서
+//캐릭터를 생성하고 추가
+void CreateCharacter(클래스이름 클래스변수???){}
+
+//캐릭터를 지우기
+void RemoveCharacter(자료형 리스트(index)?){}
+
