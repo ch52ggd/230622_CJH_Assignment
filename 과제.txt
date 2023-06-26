@@ -31,5 +31,8 @@ void CreateCharacter(클래스이름 클래스변수???){}
 //캐릭터를 지우기
 void RemoveCharacter(자료형 리스트(index)?){}
 
+//현재 캐릭터의 정보 출력
+void PrintAllCracter(){}
 
-과제 정보 못 적은건 강사님 github에서 다시 확인하자
+//while문으로 작성할 것
+
