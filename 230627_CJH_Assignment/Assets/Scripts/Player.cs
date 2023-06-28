@@ -1,6 +1,7 @@
 using System;
 
-public class Player {
+public class Player
+{
     private string name;
     private int level =1 ;
     private int hp;
@@ -8,7 +9,8 @@ public class Player {
 
 
 
-    public Player(string name, int hp, int atk){
+    public Player(string name, int hp, int atk)
+    {
         //this.name = name;
         this.name = name;
         this.hp = hp;
@@ -16,14 +18,16 @@ public class Player {
     }
 
 
-    public string Name{
+    public string Name
+    {
         get
         {
             return this.name;
         }
     }
 
-    public int Hp{
+    public int Hp
+    {
         get
         {
             return this.hp;
@@ -39,7 +43,8 @@ public class Player {
 
 
 
-    public Player GetPlayerInfo(){
+    public Player GetPlayerInfo()
+    {
         return this;
     }
 

@@ -7,7 +7,8 @@ public class Main : MonoBehaviour{
     List<Character> characterList;
 
 
-    void Start(){
+    void Start()
+    {
 
         characterList = new List<Character>();
 
@@ -25,16 +26,19 @@ public class Main : MonoBehaviour{
     }
 
 
-    public void CreateCharacter(Character c){
+    public void CreateCharacter(Character c)
+    {
         characterList.Add(c);
     }
 
 
-    public void RemoveCharacter(int index){
+    public void RemoveCharacter(int index)
+    {
         characterList.RemoveAt(index);
     }
 
-    public void PrintAllCharacter(){
+    public void PrintAllCharacter()
+    {
 
         int i = 0; 
 
@@ -50,8 +54,5 @@ public class Main : MonoBehaviour{
                 i++;
             }
         }
-
-        
     }
-
 }

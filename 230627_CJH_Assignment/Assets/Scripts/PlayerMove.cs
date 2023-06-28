@@ -9,7 +9,8 @@ public class PlayerMove : MonoBehaviour{
 
     int step = 0;
 
-    void Start(){
+    void Start()
+    {
         
     }
 
