@@ -30,10 +30,11 @@ public class EnemyObject : MonoBehaviour{
         if (enemy == null) return;
         MoveEnemy();
 
+        
         //아래로 내려가면 파괴
         if(this.transform.position.y < -5)
         {
-            this.hpbar.value -= 0.05f; //HP 줄어들기
+            this.hpbar.value -= 0.05f; //일정 구간 밑으로 내려가면 HP 줄어들기
 
             if(this.transform.position.y < -10)
             {
@@ -46,19 +47,28 @@ public class EnemyObject : MonoBehaviour{
         {
             Destroy(this.gameObject); //파괴
         }
+
+
+
     }
 
 
     private void MoveEnemy()
     {
-
+        
         if (this.transform.position.y <= -10) return;
 
         this.transform.position -= new Vector3(0, enemy.Speed * Time.deltaTime, 0);
+        
+        /*
+        if(this.transform.position.y <= -5)
+        {
+
+        }
+        else
+        {
+            
+        }
+        */
     }
-
-
-
-
-
 }
