@@ -27,28 +27,34 @@ public class GameCore : MonoBehaviour{
 
 
     // Start is called before the first frame update
-    void Start(){
+    void Start()
+    {
         playerInfo = new Player(5, 10);
     }
 
 
-    public void EarnItem(){
+    //아이템 먹었을 때
+    public void EarnItem()
+    {
         if (isFeverTime) return;
         isFeverTime = true;
         StartCoroutine(FeverTimeUpdate());
     }
 
 
-    private void StopFeverTime(){
+    private void StopFeverTime()
+    {
         if (!isFeverTime) return;
         isFeverTime = false;
         StopCoroutine(FeverTimeUpdate());
     }
 
     // Update is called once per frame
-    void Update(){
+    void Update()
+    {
         delay += Time.deltaTime;
 
+        /*
         if (isFeverTime)
         {
             Debug.Log("Fever Time");
@@ -57,8 +63,10 @@ public class GameCore : MonoBehaviour{
         {
             Debug.Log("NONE");
         }
+        */
 
-
+        //총알 생성
+        /*
         if(delay >= 1f){
             delay = 0f;
 
@@ -69,9 +77,11 @@ public class GameCore : MonoBehaviour{
 
             obj.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 3f);
         }
+        */
     }
 
 
+    //피버 타임
     IEnumerator FeverTimeUpdate()
     {
         float feverTime = 5;

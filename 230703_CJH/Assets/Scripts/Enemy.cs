@@ -1,16 +1,20 @@
 using System;
 
-public class Enemy  {
-    public enum EnemyType{
+public class Enemy
+{
+    public enum EnemyType
+    {
         Basic = 0,
         Range,
     }
+
     private EnemyType enemyType;
     private int hp;
     private int atk;
     private float speed;
 
-    public Enemy(EnemyType type, int hp, int atk, float speed) {
+    public Enemy(EnemyType type, int hp, int atk, float speed)
+    {
         this.enemyType = type;
         this.hp = hp;
         this.atk = atk;
@@ -33,16 +37,12 @@ public class Enemy  {
         get { return this.speed; }
     }
 
-    public bool Hit(int dmg){
+    public bool Hit(int dmg)
+    {
         if (this.hp - dmg <= 0) return false;
 
         this.hp -= dmg;
 
         return true;
     }
-    
-
-
-
-
 }
